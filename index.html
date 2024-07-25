@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image to Text Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image to Text Converter</h1>
+      <p>
+        Upload an image containing text, and this tool will convert the text in
+        the image to editable text.
+      </p>
+      <div id="uploading">
+        <input type="file" id="imageUpload" accept="image/*" />
+        <div id="dropZone">Drag and drop an image here</div>
+      </div>
+      <div id="loadingContainer" style="display: none">
+        <div id="loadingBar">
+          <div id="loadingProgress"></div>
+        </div>
+        <span id="loadingText">0%</span>
+      </div>
+
+      <button id="convertButton">Convert to Text</button>
+      <div id="output" style="display: none">
+        <button id="copyButton" title="Copy to clipboard">Copy</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.1.0/tesseract.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

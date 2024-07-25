@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="file"] {
+  margin: 20px 0;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#output {
+  margin-top: 20px;
+  white-space: pre-wrap;
+  text-align: center;
+  background-color: #ccc;
+}
+
+#dropZone {
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  color: #ccc;
+}
+
+#dropZone.dragover {
+  border-color: #4caf50;
+  color: #4caf50;
+}
+
+#loadingContainer {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#loadingBar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#loadingProgress {
+  height: 20px;
+  width: 0%;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+#loadingText {
+  display: block;
+  margin-top: 10px;
+}
+
+#output {
+  position: relative;
+  margin-top: 20px;
+  white-space: pre-wrap;
+  text-align: center;
+  display: none;
+}
+
+#copyButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #4caf50;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#copyButton:hover {
+  color: #45a049;
+}
